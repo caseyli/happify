@@ -18,23 +18,49 @@
         font-family: "Arial", sans-serif; 
         text-align:center;
         font-size:30px;
-        background-color:green;
-      }
-
-      h1 {
-        color:white;
-      }
-
-      h2 {
-        color:gray;
       }
 
       .less-important {
-        font-size:20px;
+        font-size:15px;
       }
 
-      #my-favourite-sites-header {
-        color:yellow;
+      .primary-text {
+        color:green;
+      }
+
+      h1.primary-text {
+        color:gray;
+      }
+
+      .secondary-text {
+        color:blue;
+      }
+
+      .tertiary-text {
+        color:black;
+      }
+
+      li {
+        background-color:gray;
+      }
+
+      .favourite-artists-container ul > li {
+        color:white;
+      }
+
+      .button {
+        display:inline-block;
+        padding: 5px 10px;
+        border:1px solid #999;
+        background:#aaa;
+        color:white;
+        text-decoration:none;
+        border-radius:5px;
+      }
+
+      .button:hover {
+        background:#ddddee;
+        color:black;
       }
 
     </style>
@@ -43,7 +69,7 @@
 
   <body>
 
-    <h1>
+    <h1 class="primary-text">
       Welcome to Happify!
     </h1>
 
@@ -51,7 +77,7 @@
       Services
     </h2>
 
-    <p>
+    <p class="primary-text less-important">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -64,7 +90,7 @@
       About
     </h2>
 
-    <p>
+    <p class="secondary-text less-important">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -73,7 +99,7 @@
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
 
-    <p>
+    <p class="secondary-text less-important">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -86,7 +112,7 @@
       Contact
     </h2>
 
-    <p>
+    <p class="tertiary-text less-important">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -95,19 +121,30 @@
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
 
-    <h2 class="less-important" id="my-favourite-sites-header">My favourite sites</h2>
+    <h2 class="less-important primary-text" id="my-favourite-sites-header">My favourite sites</h2>
 
     <p>
-      <a href="http://www.engadget.com" target="_blank">Click here to go to Engadget</a>
+      <a href="http://www.engadget.com" target="_blank" class="button primary-button">Click here to go to Engadget</a>
     </p>
 
     <h2 class="less-important">My favourite artists</h2>
+
+    <div class="favourite-artists-container">
+      <div>
+        <ul>
+          <li>Damien Rice</li>
+          <li>The Frames</li>
+          <li>Swell Season</li>
+        </ul>    
+      </div>
+    </div>
 
     <ul>
       <li>Damien Rice</li>
       <li>The Frames</li>
       <li>Swell Season</li>
-    </ul>
+    </ul> 
+    
 
   </body>
 
